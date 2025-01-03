@@ -1,0 +1,231 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'Gyeonggi_Title_Medium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+*{font-family: 'Gyeonggi_Title_Medium';}
+:root{  
+  --txt-span-white:#fff;
+  --txt-span-black:#000;  
+  --txt-weather-white:#fff;  
+}
+body{
+  background-image: url(./images/spring.jpg); 
+  margin: 0 auto;  
+}
+body.summer{
+  background-image: url(./images/summer.jpg);  
+  margin: 0 auto; 
+}
+body.autumn{
+  background-image: url(./images/autumn.jpg);  
+  margin: 0 auto;   
+}
+body.winter{
+  background-image: url(./images/winter.jpg);
+  margin: 0 auto; 
+}
+.weather{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  margin-right: 30px;
+  gap: 10px;
+  text-align: right;
+}
+body.summer >.weather>span,
+body.autumn >.weather>span,
+body.winter >.weather>span
+{
+  color: #fff;
+}
+body.autumn>.weather{
+  background-color: rgba(0,0,0,0.5);
+  width: 200px;
+  padding: 30px;
+  border-radius: 50px;
+}
+.weather>span:nth-child(1){
+  font-size: 30px;
+  color: #1f4f56;
+}
+.weather>span:nth-child(2){
+  font-size: 30px;
+  color: #000;
+}
+.weather>span:nth-child(3){
+  font-size: 70px;
+  color: #1f4f56;
+}
+#todoList{
+  position: fixed;
+}
+li{  
+  margin-left: 15px;  
+  font-size: 20px;
+}
+li::marker{
+  content: '❤ ';
+  color: red;
+}
+li>button{
+  color: red;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+body.summer>#todoList>li>span,
+body.autumn>#todoList>li>span,
+body.winter>#todoList>li>span
+{
+  color: var(--txt-span-white);
+}
+.today{
+  display: flex;
+  gap: 10px;
+  color: #1f4f56;
+  align-items: center;  
+  font-weight: bolder;
+  margin: -10px 30px;
+}
+body.summer > form > .today,
+body.winter > form > .today
+{
+  color: #fff;
+}
+body.autumn>form>.today{
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+  width: 370px;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.today>p:nth-child(1){
+  font-size: 40px;
+}
+.today>p:nth-child(2){
+  font-size: 30px; 
+}
+input{
+  width: 20%;
+  height: 35px;
+  margin: -10px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.clock{
+  font-size: 278px; 
+  color:#1f4f56;
+  display: flex;
+  justify-content: center;    
+  margin-top: 120px;     
+  margin-bottom: 0px;
+}
+body.summer>h1
+{
+  color: var(--txt-span-white);
+  background-color: rgba(0,0,0,0.3);      
+  width: 40%;
+  text-align: center;
+  margin-top: 120px;     
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 70px;  
+}
+body.autumn>h1
+{
+  color: var(--txt-span-white);
+  background-color: rgba(0,0,0,0.5);      
+  width: 40%;
+  text-align: center;
+  margin-top: 120px;     
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 70px;  
+}
+body.winter>h1{
+  color: var(--txt-span-white);
+}
+.line{
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: #857979;
+}
+body.summer>.line{
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+body.autumn>.line{
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.5);
+}
+body.winter>.line{
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.quote{
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+  align-items: center;    
+  gap: 5px;
+}
+.quote>span:nth-child(1){
+  font-size: 50px;
+  background-color: rgba(255,255,255,0.5);
+  padding: 5px;
+  width: 75%;
+  border-radius: 20px;  
+}
+.quote>span:nth-child(2){
+  font-size: 45px;
+  font-weight: bolder;
+  color: #112b8c;
+  background-color: rgba(0,0,0,0.3);
+  padding: 5px;
+  width: 30%;
+  border-radius: 20px; 
+}
+body.summer>.quote>span:nth-child(1),
+body.autumn>.quote>span:nth-child(1),
+body.winter>.quote>span:nth-child(1)
+{
+  font-size: 50px;
+  background-color: var(--txt-span-white);
+  padding: 5px;
+  width: 75%;
+  border-radius: 20px;  
+}
+body.summer>.quote>span:nth-child(2),
+body.autumn>.quote>span:nth-child(2),
+body.winter>.quote>span:nth-child(2)
+{
+  font-size: 45px;
+  font-weight: bolder;
+  color: var(--txt-span-black);
+  background-color: var(--txt-span-white);
+  padding: 5px;
+  width: 30%;
+  border-radius: 20px; 
+}
