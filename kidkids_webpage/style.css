@@ -1,0 +1,531 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'HakgyoansimAllimjangTTF-B';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimAllimjangTTF-B.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+*{
+  font-family:HakgyoansimAllimjangTTF-B;
+}
+:root{
+  /*** color ***/
+  --color-bg: #fff;
+  --color-main:#015253;
+  --color-font:#222;
+  --color-font2:#ff6f28;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+main{
+  width: 1440px;
+  margin: 30px auto;
+}
+main > section{
+  height: 100vh;
+}
+
+#intro > .menu >.sub-menu{
+  display: flex;    
+  align-items: center;
+  text-align: center;
+}
+#intro > .menu >.sub-menu >div{
+  width: 3px;
+  height: 30px;
+  background-color: var(--color-main);  
+}
+#intro > .menu >.sub-menu > p{  
+  font-size: 2.5rem;
+  color: var(--color-font);
+  padding: 20px;  
+}
+#intro > .menu >.sub-menu > p:hover{
+  color: var(--color-font2);
+  cursor: pointer;
+}
+
+#intro > .menu >.main-menu{  
+  display: flex;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-font);  
+}
+#intro > .menu >.main-menu > .top-logo{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+#intro > .menu >.main-menu > .top-logo > h2{
+  font-size: 3rem;
+  color: var(--color-main);
+}
+#intro > .menu >.main-menu > .top-menu{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 30px;
+  font-size: 3rem;
+}
+#intro > .menu >.main-menu > .top-menu>p:hover{
+  color: var(--color-font2);
+  cursor: pointer;
+}
+ #intro:after{
+  content: "";
+  display: block;
+  clear: both;
+  /** 밑에 것이 치고 올라오지 못하도록 clear both사용 필요 **/
+ }
+
+.overview{
+  background-image: url(./images/topimg.jpg);
+  width: 100%;
+  height: 689px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+.overview > .slogan{
+  margin: 150px;
+}
+
+.overview > .slogan >h1>:nth-child(1){
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+}
+.overview > .slogan >h1>:nth-child(2){
+  display: inline-block;
+  font-size: 7rem;
+  color: var(--color-main);
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--color-main);  
+}
+.overview>.slogan >p{
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+#awards > .explain >h2>:nth-child(1){
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+#awards > .explain >h2>:nth-child(2){
+  font-size: 4rem;
+  color: var(--color-main);
+  display: inline-block;
+  border-bottom: 3px dotted var(--color-main);  
+}
+#awards > .explain >p{
+  font-size: 2.4rem;
+  margin:30px 0;  
+}
+#awards > .awardlist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;  
+}
+#awards > .awardlist >.awards1{
+  border-radius: 50px;  
+  text-align: center;  
+  border: 3px solid var(--color-main);
+  width: 383px;
+  height: 290px;
+  background-image: url(./images/여성가족부\ 가족친화기업.png);  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 30px #fff;
+}
+#awards > .awardlist >.awards2{
+  border-radius: 50px;  
+  text-align: center;  
+  border: 3px solid var(--color-main);
+  width: 383px;
+  height: 290px;
+  background-image: url(./images/고요노동부\ 강조기업.png);  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 0 0 30px #fff;
+}
+#awards > .awardlist >.awards3{
+  border-radius: 50px;  
+  text-align: center;  
+  border: 3px solid var(--color-main);
+  width: 383px;
+  height: 290px;
+  background-image: url(./images/대한민국교육대상.png);  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 30px #fff;
+}
+#awards > .awardlist >.awards4{
+  border-radius: 50px;  
+  text-align: center;  
+  border: 3px solid var(--color-main);
+  width: 383px;
+  height: 290px;
+  background-image: url(./images/대한민국강소기업대상.png);  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 0 0 30px #fff;
+  
+}
+#awards > .awardlist >.awards5{
+  border-radius: 50px;  
+  text-align: center;  
+  border: 3px solid var(--color-main);
+  width: 383px;
+  height: 290px;
+  background-image: url(./images/디지털만족도.png);  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  text-shadow: 0 0 30px #fff;
+}
+#awards > .awardlist >.awards6{
+  border-radius: 50px;  
+  text-align: center;  
+  border: 3px solid var(--color-main);
+  width: 383px;
+  height: 290px;
+  background-image: url(./images/정보보호관리체계\ 인증제도.png);  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 0 0 30px #fff;
+}
+#awards > .awardlist >.awards1>p,
+#awards > .awardlist >.awards2>p,
+#awards > .awardlist >.awards3>p,
+#awards > .awardlist >.awards4>p,  
+#awards > .awardlist >.awards5>p,  
+#awards > .awardlist >.awards6>p{  
+  font-size: 3rem;
+}
+
+#brands{
+  background-image: url(images/ekbrands.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+#brands>.ekbrands>h3>:nth-child(1){
+  font-size: 5.5rem;
+}
+#brands>.ekbrands>h3>:nth-child(2){
+  font-size: 7rem;
+  color: var(--color-main);
+  border-bottom: 3px dotted var(--color-main);
+  display: inline-block;
+}
+#brands img{
+  width: 122px;
+  height: 122px;
+}
+#brands > .ekbrands{
+  width: 1440px;
+  height: 900px;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+}
+#brands >.ekbrands>.brandleft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+  width: 30%;
+  gap: 20px;
+}
+#brands >.ekbrands>.brandright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+  gap: 20px;
+}
+#brands > .ekbrands>.brandright >img{
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  border: 2px solid var(--color-main);
+}
+#brands > .ekbrands >h3{
+  text-align: center;
+}
+
+#brands >.brex{
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  font-size: 2rem;
+  text-align: center;
+}
+#bottom > .csr{
+  width: 1440px;
+  height: 685px;
+  background-image: url(./images/btimg.jpg);   
+}
+#bottom > .csr> .csr-img{ 
+  display: flex;
+  position: relative;    
+  /* filter: drop-shadow(0 0 5px rgba(0,0,0,.5)); */
+  /* 전체에 드롭 섀도우 넣는 법 filter drop-shadow */
+}
+#bottom > .csr > .csr-img>.img1{
+  background-image: url(./images/1sample.jpg);
+  width: 551px;
+  height: 551px;  
+  position: absolute;  
+  left: 0;
+  translate: 0;
+  opacity: 50%;  
+  z-index: 3;
+}
+#bottom > .csr > .csr-img>.img2{
+  background-image: url(./images/2sample.jpg);
+  position: absolute;
+  width: 551px;
+  height: 551px;  
+  left: 20%;  
+  translate: -25%;
+  opacity: 80%;
+  z-index: 4;
+}
+#bottom > .csr > .csr-img>.img3{
+  background-image: url(./images/4sample.jpg);
+  position: absolute;  
+  left: 50%;
+  transform: translate(-50%);
+  width: 551px;
+  height: 551px;   
+  z-index: 5;
+}
+#bottom > .csr > .csr-img>.img4{  
+  background-image: url(./images/3sample.jpg);
+  position: absolute;
+  right: 10%;  
+  width: 551px;
+  height: 551px; 
+  z-index: 4;
+  opacity: 70%;
+}
+#bottom > .csr > .csr-img>.img5{  
+  background-image: url(./images/5sample.jpg);
+  position: absolute;
+  right: 0;
+  translate: 0%;
+  opacity: 50%;
+  width: 551px;
+  height: 551px; 
+  z-index: 2;
+}
+
+#bottom > .csr > h3{
+  font-size: 5rem;
+  color: var(--color-main);
+  text-align: center;
+  padding-top: 40px;
+}
+
+#bottom > .footer{
+  background-color: #cdc3c0;
+  width: 1440px;
+  height: 215px;
+  display: flex;
+  align-items: center;
+}
+#bottom > .footer>.foot-logo{  
+  margin-left: 20px;
+  display: flex;
+}
+#bottom > .footer>.foot-logo>h3>p{    
+  font-size: 3rem;
+  color: var(--color-font);
+  opacity: 90%;
+  border-right: 1px solid var(--color-font);
+  padding:0 20px;
+}
+#bottom > .footer > .address > p{
+  padding-left: 20px;  
+  font-size: 1.8rem;
+  color: var(--color-font);
+  opacity: 70%;
+}
+
+
+/* *** 모바일/태블릿 사이즈 통일 ***/ 
+@media screen and (max-width:768px){
+
+  /*** layout 변경 ***/
+  html{
+    font-size: 43.7%;   /** 폰트 사이즈를 10픽셀로 지정해놓고 가겠다는 뜻**/
+  }
+  main{
+    width: 70%;
+    min-width: 320px;
+    margin: 0px auto;   
+  }
+  main > section{
+    height: auto;
+  }
+  #intro > .menu{
+    display: flex;
+    flex-direction: column;   
+  }
+  #intro > .menu> .sub-menu >p{
+    font-size: 2.3rem;
+  }
+  #intro > .menu >.div-menu >p{
+    font-size: 1rem;
+  }
+  #intro > .menu > .main-menu{
+    display: flex;
+    flex-direction: column;         
+  }
+  #intro > .menu > .main-menu> .top-logo{
+    margin-top: 20px;
+  }
+  #intro > .menu > .main-menu> .top-logo>h2 >p, #intro > .menu > .main-menu>.top-menu> p{
+    font-size: 2rem;
+  }
+  #intro > .menu > .main-menu> .top-menu{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #intro >.overview{
+    background-size: 100%;    
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;    
+  }
+  
+  #intro >.overview> .slogan {
+    margin: 20px;      
+  }
+  #intro >.overview> .slogan >h1 >p{
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+  }
+  #intro >.overview> .slogan >p{
+    font-size: 2rem;
+    } 
+#awards{
+  margin: 30px auto; 
+}
+#awards > .awardslist{ 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#brands{
+  background-image: none;  
+}
+#brands > .ekbrands{  
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;    
+}
+#brands > .ekbrands > .brandleft{ 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#brands > .ekbrands>.brandright{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#brands > .ekbrands>.brandleft >img,
+#brands > .ekbrands>.brandright >img
+{
+  width: 70px;
+ height: 70px;
+ border: 1px solid var(--color-main);
+ border-radius: 70px; 
+}
+ 
+#brands > .brex{
+ display: none;
+}  
+
+ #bottom{
+  width:  100%; 
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+ } 
+ 
+  #bottom >.csr{
+    width: 100%;
+    background-image: none;    
+  }
+  #bottom > .csr>.csr-img>.img1{
+    display: none;
+  }
+  #bottom > .csr>.csr-img>.img2{
+    display: none;
+  }
+  #bottom > .csr>.csr-img>.img4{
+    display: none;
+  }
+  #bottom > .csr>.csr-img>.img5{
+    display: none;
+  }
+  #bottom > .footer{
+    width: 100%;      
+    height: auto;       
+    gap: 10px;    
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  #bottom > .footer > .foot-logo{
+    padding-top: 20px;
+  } 
+  #bottom > .footer>.address>p{
+  padding: 10px 20px;
+  padding-bottom: 20px;
+  } 
+}
