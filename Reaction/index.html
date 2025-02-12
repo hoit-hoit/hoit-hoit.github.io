@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- 폰트 어썸 링크는 style위에만 있으면 된다. -->
+    <title>포트폴리오형 블로그 웹페이지</title>
+  </head>
+  <body>
+    <div class="fix-home">
+      <a href="#main">
+        <!-- 앵커기능 -->
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    </div>
+    <main>
+      <!-- main안에 header가 있는 것도 전혀 상관없다 -->
+      <section id="main">
+        <h1>
+          <p>HELLO,</p>
+          <p>I'M</p>
+          <p>WEBPUBLISHER</p>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          quibusdam libero enim provident quaerat repellat doloremque officiis
+          voluptatum saepe eius dolores incidunt soluta, sequi reprehenderit
+          quos impedit ducimus magni esse?
+        </p>
+        <!-- h1태그는 한 페이지에 한 개가 있는 것이 권장사항, 모든 페이지에 꼭 한 개는 있어야한다. -->
+        <div>
+          <span>2024</span>
+          <hr />
+          <span>2025</span>
+          <!-- hr태그로 수평선 그릴 수 있다. -->
+          <!-- a태그 image태그 절대 잊어버리지 말기! -->
+        </div>
+        <p>Copyright 2024.All rights reserved</p>
+      </section>
+      <section id="about">
+        <h2>
+          <p>ABOUT</p>
+          <p>ME</p>
+        </h2>
+        <article>
+          <div class="img"></div>
+          <ul>
+            <li>
+              <h3>#INTRODUCE</h3>
+              <p>NAME</p>
+              <p>PHONE</p>
+              <p>EMAIL</p>
+            </li>
+            <li>
+              <h3>#I'AM</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, commodi officia! Veniam cumque distinctio id
+                temporibus dolorem eveniet. Iure reiciendis neque fugiat rem
+                labore, est similique nostrum accusantium placeat quod?
+              </p>
+            </li>
+            <li>
+              <h3>#SKILLS</h3>
+              <div class="skill">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptates possimus molestias aut, porro soluta reiciendis
+                  earum non laboriosam ipsa esse aspernatur, rem odit, vero
+                  totam ea impedit asperiores? Laboriosam, modi.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="clone">
+        <h2>
+          <p>CLONE</p>
+          <p>CODING</p>
+        </h2>
+        <div class="wrap">
+          <div class="img"></div>
+          <article>
+            <div class="head">
+              <h3>01.타이틀</h3>
+              <div class="icon-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+                <!-- 폰트어썸 아이콘 chevon-left , chevron-right로 만들어야한다. -->
+              </div>
+            </div>
+            <div class="overview">
+              <p class="title">OVERVIEW</p>
+              <p class="detail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                obcaecati ut debitis consectetur. Exercitationem, odit adipisci
+                perspiciatis, unde, tempore expedita nemo aspernatur similique
+                voluptatum doloremque asperiores! Deleniti nam corrupti totam?
+              </p>
+            </div>
+            <div class="txt">
+              <p>UI디자인 제작 방식 : PhotoShop</p>
+              <p>퍼블리싱 제작 방식 : HTML + CSS</p>
+              <p>레이아웃 제작 방식 : CSS Flex</p>
+              <p>제작 참여율 : 100%</p>
+              <p>제작 소요 시간 : 2일</p>
+            </div>
+            <div class="view-btn">
+              <p>SITE VIEW</p>
+              <p>GITHUB</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="publising">
+        <h2>
+          <p>PRACTICAL</p>
+          <p>PUBLISHING</p>
+        </h2>
+        <div class="circle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="item">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <!-- id는 중복하지 않는 것이 가장 좋다 -->
+    </main>
+  </body>
+</html>

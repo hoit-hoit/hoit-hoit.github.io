@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+@import url('https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+/* ctrl눌러서 url 누르고 font-family되어 있는 것으로 쓰면 된다. */
+
+/* 16px -> 가변:rem , em
+2rem -> 32px */
+
+:root{
+  /*** color ***/
+  --color-bg: #c9c9c8;
+  --color-main:#de522f;
+  --color-font:#222;
+}
+html{
+  font-size: 62.5%;   /** 폰트 사이즈를 10픽셀로 지정해놓고 가겠다는 뜻**/
+  scroll-behavior: smooth;
+  /* 클릭했을 때 스무스하게 올라가는 것 */
+}
+body{
+  font-family:"Wanted Sans", sans-serif;
+  /* 없을 경우 대비해서 뒤에 sans-serif 한 개 더 적어 준 것이다. */
+  font-size: 1rem;
+  background-color: var(--color-bg);   
+  color: var(--color-font);  
+}
+/*** fix-home ***/
+div.fix-home{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-main);
+  color: var(--color-bg);
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+main{
+  width: 1440px;
+  margin: 50px auto;
+}
+main > section{
+  height: 100vh;
+}
+
+/** section main **/
+#main > h1{
+  color:var(--color-main);
+  font-size: 13rem;
+}
+#main > h1 > p{
+  line-height: 13rem;
+}
+#main  > p:nth-of-type(1){
+  font-size: 2rem;
+  width: 50rem;
+  margin-top: 3rem;
+  margin-bottom:20rem ;
+  
+  /* nth of child는 아래있는 자식, nth of type(1)은 밑에 있는 p태그 중 첫번쨰 라는 뜻 */
+}
+#main > div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  float: left;
+}
+#main  > div > span{
+  color: var(--color-main);
+  font-size: 3rem;
+}
+#main > div > hr{
+  background-color: var(--color-main);
+  width:20rem ;
+  height: 1px;
+  border: none;   
+}
+#main > p:nth-of-type(2){
+  color: var(--color-main);
+  font-size: 3rem;
+  float: right;
+}
+#main:after{
+  content: "";
+  display: block;
+  clear: both;
+  /** 밑에 것이 치고 올라오지 못하도록 clear both사용 필요 **/
+}
+/*** section common ***/
+section > h2{
+  color: var(--color-main);
+  font-size: 7rem;
+  margin: 7rem 0;
+}
+
+/*** section about ***/
+/* #about{} */
+#about > article{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+#about > article > div.img{
+  width: 410px;
+  height: 565px;
+  border: 1px solid #222;
+  border-radius: 50px;  
+}
+#about > article > ul{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  column-gap: 4%;  
+}
+#about > article > ul > li{
+  width: 48%;
+  border-top: 3px solid var(--color-main);
+}
+#about > article > ul > li:last-child{
+  width: 100%;
+}
+#about > article > ul > li > h3{
+  font-size: 3rem;
+  color: var(--color-main);
+  padding: 1rem;
+}
+#about > article > ul > li  p{
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/*** section clone coding ***/
+#clone > .wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+#clone > .wrap > div.img{
+  width: 650px;
+  height: 600px;
+  border: 1px solid #222;
+  border-radius: 50px;  
+}
+#clone > .wrap > article{
+  flex: 1;
+}
+#clone > .wrap > article > div{
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+#clone > .wrap > article > .head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#clone > .wrap > article > .head > h3{
+  font-size: 6rem;
+  font-weight: 400;
+}
+#clone > .wrap > article > .head > .icon-btn > i{
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-main);
+  border-radius: 50%;
+  color: var(--color-bg);
+  text-align: center;
+  line-height: 80px;
+  font-size: 60px;
+}
+#clone > .wrap > article > .overview,
+#clone > .wrap > article > .txt{
+  border-top: 3px solid var(--color-main);
+}
+#clone > .wrap > article > .overview > .title, 
+#clone > .wrap > article > .txt > p{
+  font-size: 3rem;
+}
+#clone > .wrap > article > .overview > .detail{
+  font-size: 2rem;
+}
+#clone > .wrap > article > .view-btn{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#clone > .wrap > article > .view-btn >p{
+  flex: 1;
+  background-color: var(--color-main);  
+  color: var(--color-bg);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 3rem;
+}
+/*** section publishing ***/
+#publising > .circle{
+  text-align: center;
+}
+#publising > .circle > span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-main);  
+}
+#publising > .item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* 여러 줄로 나오게하려면 felx wrap을 wrap으로 바꾸기 */
+  gap: 20px;
+  padding: 3rem 0;
+  /* 마지막 줄은 마진값이 아닌 패딩으로 줘야 여백값을 줄 수 있다. */
+}
+#publising > .item > div{
+  width: 420px;
+  height: 280px;
+  border-radius: 20px;
+  border: 1px solid var(--color-font);
+}
+
+/*** 모바일/태블릿 사이즈 통일 ***/
+@media screen and (max-width:768px){
+  /***
+    font-size : 7px
+    main-width : 80%
+    height : auto
+  ***/
+
+  /*** layout 변경 ***/
+  html{
+    font-size: 43.7%;   /** 폰트 사이즈를 10픽셀로 지정해놓고 가겠다는 뜻**/
+  }
+  main{
+    width: 80%;
+    min-width: 320px;
+    margin: 50px auto;
+  }
+  main > section{
+    height: auto;
+  }
+  #main > p:nth-of-type(2),
+  div.fix-home{
+    display: none;
+  }  
+  #about > article,
+  #about > article > ul,
+  #clone > .wrap,
+  #publising > .item{
+    flex-direction: column;
+  }
+  #about > article > ul>li{
+    width: 100%;
+  }
+
+
+  #main > h1{
+  /*** 사이즈 변경 ***/
+  font-size: 7rem;
+  }
+#main > h1 > p{
+  line-height: 9rem;
+  }
+#about > article > div.img{
+  width: 320px;
+  height: 400px;
+  margin: 0 auto;
+  }
+#clone > .wrap > div.img{
+  width: 320px;
+  height: 300px;
+  margin: 0 auto;
+  }
+#clone > .wrap > article > .head > .icon-btn > i{
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 40px;
+  }
+#pusblising > .item > div{
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  }
+}
