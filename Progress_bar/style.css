@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* reset */
+*{margin: 0; padding: 0;}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  background-color: #cfc4c4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+}
+main > h1{
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;  
+  /* text 색상에 그라데이션 */
+  background-image: linear-gradient(90deg, rgba(72,47,171,1) 0%, rgba(52,189,160,1) 100%);
+  background-clip: text;
+  /* 글자색 투명화 transparent */
+  color: transparent;
+}
+main > div.item{
+  margin: 20px 0;
+}
+main > div.item> div.title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #121815;
+}
+main  > div.item> div.line{
+  height: 10px;
+  border: 2px solid #a380ac;
+  border-radius: 5px;
+  padding: 2px;
+}
+main > div.item> div.line> div.bar{  
+  height: 100%;
+  background-image:linear-gradient(90deg, rgba(190,174,238,1) 0%, rgba(148,233,215,1) 100%);
+  /* 애니메이션 이름, duration 모두 잘 적어줘야한다. */
+  animation-name: progress;
+  animation-duration: 1s;
+}
+
+/* 시작점만주고, 끝점을 안주면 초기화되서 알아서 원상 복귀된다. 왜냐? 마지막을 html에 적어줬으니까! */
+@keyframes progress{
+  0%{
+    width: 0;
+  }
+}
