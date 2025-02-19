@@ -1042,6 +1042,15 @@
     color: #003161;    
     line-height: 50px;
   }
+  #ABOUT-ME > .resume>.profile>.education>.edu-main >.edu-num>p:nth-of-type(1){
+    margin-bottom: 30px;
+  }
+  #ABOUT-ME > .resume>.profile>.career > .career-main>.career-num>p:nth-of-type(1){
+   margin-bottom: 30px;
+  }
+  #ABOUT-ME > .resume>.profile>.career > .career-main>.career-contain>p:nth-of-type(2){
+    margin-bottom: 30px;
+  }
   #ABOUT-ME > .resume>.Certificate{
     width: 100%;
     padding-left: 0;
