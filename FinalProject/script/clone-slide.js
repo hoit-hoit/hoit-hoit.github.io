@@ -20,7 +20,8 @@ let sliderWidth = sliderImg.offsetWidth; //이미지 가로값
 //2. 각 버튼이 눌린값을 토대로 transform을 이용해 이동
 function gotoSlider(num) {
   sliderInner.style.transition = "all 700ms";
-  sliderInner.style.transform = "translateX(" + -sliderWidth * num + "px)";
+  // sliderInner.style.transform = "translateX(" + -sliderWidth * num + "px)";
+  sliderInner.style.transform =  `translateX(${-sliderWidth * num}px)`;
   currentIndex = num;
 }
 

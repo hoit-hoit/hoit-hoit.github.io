@@ -196,9 +196,36 @@
 #ABOUT-ME > .resume>.profile>.education{
   padding: 60px 0;
 }
-#ABOUT-ME > .resume>.Certificate{
+#ABOUT-ME > .resume>.profile>.education>.edu-main{
+  display: flex;
+  gap: 10px;
+}
+#ABOUT-ME > .resume>.profile>.career > .career-main{
+  display: flex;
+  gap: 10px;
+}
+#ABOUT-ME > .resume>.Certificate{  
   width: 33%;
   padding-left: 20px;
+}
+#ABOUT-ME > .resume>.Certificate>.certi-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#ABOUT-ME > .resume>.Certificate img{
+  width: 100px;
+  height: 100px;  
+}
+#ABOUT-ME > .resume>.Certificate img:nth-of-type(3){
+  width: 110px;
+  height: 110px;
+}
+#ABOUT-ME > .resume>.Certificate >.certi-main{
+  display: flex;
+  gap: 20px;
 }
 #ABOUT-ME > .resume>.Certificate p{
   line-height: 35px;
@@ -208,8 +235,9 @@
   padding-left: 20px;  
 }
 #ABOUT-ME > .resume>.Project h4{
-  font-size: 1rem;
-  color:#003161;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  color:#006a67;
 }
 #ABOUT-ME > .resume>.Project>.cl{
   padding-bottom: 30px ;
@@ -220,9 +248,7 @@
 #ABOUT-ME > .resume>.Project>.we{
   padding-bottom: 30px ;
 }
-#ABOUT-ME > .resume>.Project p{
-  line-height: 40px;
-}
+
 #ABOUT-ME > .resume> .proline{
   width: 1px;
   height: 90%;
@@ -951,13 +977,13 @@
       color: #fff;
       position: fixed;     
       right: 10px;
-      bottom: 10px;     
+      bottom: 50px;     
       cursor: pointer;
       font-family: 'JalnanGothic';
-      font-size: 1rem;
+      font-size: 1.2rem;
       border: 2px solid #000b58;
       border-radius: 50%;
-      padding: 10px;
+      padding: 15px;
       box-shadow:1px 3px 10px #222;
 }
 @media screen and (max-width:768px){
