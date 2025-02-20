@@ -1208,9 +1208,19 @@
     padding: 20px;
   }
   #IMAGE-PROJECT .image-btn{  
-    height: 50px;
-    width: 30%;   
-    font-size: 50px;      
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: 30px;  */
+  }
+  .image-btn p{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
   }
   #IMAGE-PROJECT> .imgP-main > .img-card:nth-of-type(7){ 
     transform:translate(calc(-50%*1.35),-50%) translateZ(50px) ;
