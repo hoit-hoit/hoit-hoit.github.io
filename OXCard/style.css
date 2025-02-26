@@ -36,7 +36,7 @@ button.o:hover{
     color: white;
 }
 button.x:hover{
-    background-color: pink;
+    background-color: red;
     color: white;
 }
 p{
