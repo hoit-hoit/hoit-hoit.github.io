@@ -6,7 +6,7 @@ const updateResult = (ele,txt,bg)=>{
 const checkAnswer = (answer)=>{
     const result = document.querySelector("p")
     if(answer==true){
-        updateResult(result,"정답입니다","green");
+        updateResult(result,"축하합니다! 정답입니다","green");
     }else{
         updateResult(result,"틀렸습니다","black"); 
     }
